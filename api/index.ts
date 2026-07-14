@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 
-// Remove the '/api/premium-data' here so it responds at the root of the file
+// Use '/' to handle the base path of this file
 app.get('/', (req: any, res: any) => {
   res.json({
     success: true,

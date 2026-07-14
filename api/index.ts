@@ -2,7 +2,8 @@ import express from 'express';
 
 const app = express();
 
-app.get('/api/premium-data', (req: any, res: any) => {
+// Remove the '/api/premium-data' here so it responds at the root of the file
+app.get('/', (req: any, res: any) => {
   res.json({
     success: true,
     message: "You have successfully accessed the premium paywall data!"

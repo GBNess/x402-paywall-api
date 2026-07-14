@@ -1,13 +1,8 @@
-import express from 'express';
+import { VercelRequest, VercelResponse } from '@vercel/node';
 
-const app = express();
-
-// Use '/' to handle the base path of this file
-app.get('/', (req: any, res: any) => {
-  res.json({
+export default (req: VercelRequest, res: VercelResponse) => {
+  res.status(200).json({
     success: true,
     message: "You have successfully accessed the premium paywall data!"
   });
-});
-
-export default app;
+};

@@ -1,0 +1,15 @@
+{
+  "name": "x402-paywall-api",
+  "version": "1.0.0",
+  "description": "API endpoint for x402 premium paywall",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
